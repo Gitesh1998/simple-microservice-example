@@ -5,7 +5,7 @@ After=network.target
 [Service]
 User=giteshpawar56
 WorkingDirectory=/var/www/simple-microservice-example/QuoteService
-ExecStart=/var/www/simple-microservice-example/QuoteService/venv/bin/python /var/www/simple-microservice-example/QuoteService/main.py
+ExecStart=/bin/bash -c  '/var/www/simple-microservice-example/QuoteService/venv/bin/python /var/www/simple-microservice-example/QuoteService/main.py'
 Restart=always
 
 [Install]

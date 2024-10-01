@@ -6,8 +6,8 @@ import redis
 def get_db():
     client = MongoClient(host='localhost',
                          port=27017,
-                         username='root',
-                         password='pass',
+                         username='admin',
+                         password='admin',
                          authSource="admin")
     db = client["quote_db"]
     return db
